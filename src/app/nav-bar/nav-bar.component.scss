@@ -5,29 +5,25 @@
     list-style: none;
     margin-left: 40px;
     margin-top: 40px;
-}
 
-.menu-item {
-	cursor: pointer;
-	transform: scale(1);
-	transform-origin: 0%;
-	transition: transform .5s ease;
-	margin-bottom: 30px;
-}
+    &-item {
+    	cursor: pointer;
+		transform: scale(1);
+		transform-origin: 0%;
+		transition: transform .5s ease;
+		margin-bottom: 30px;
+		outline: none;
 
-.menu-item:hover {
-	color: #99fdff;
-}
-
-.menu-item-selected {
-	transform: scale(1.2);
-	transform-origin: 0%;
-	transition: transform .5s ease;
-}
-
-.my-name-selected {
-	transform: scale(1.01);
-	transform-origin: 0%;
+		&:hover {
+			color: #99fdff;
+		}
+    
+		&-selected {
+			transform: scale(1.2);
+			transform-origin: 0%;
+			transition: transform .5s ease;
+		}
+    }
 }
 
 .my-name {
@@ -38,4 +34,9 @@
 		transition: transform 1s ease;
 		font-size: 30px;	
 	}
+
+	&-selected {
+		transform: scale(1.01);
+		transform-origin: 0%;	
+	}	
 }
