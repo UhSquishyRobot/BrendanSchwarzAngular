@@ -1,1 +1,6 @@
-<p>video-page works!</p>
+<div class="video-river">
+	<div class="video-container" *ngFor="let videoLink of videoLinks">
+		<iframe width="560" height="315" [src]="videoLink | domSanitizer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	
+</div>
+

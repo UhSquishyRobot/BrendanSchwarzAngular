@@ -29,6 +29,13 @@
 	height: 18vw;
 	min-height: 260px;
 	border-radius: 300px;
+	animation-name: slidedown;
+	animation-duration: .8s;
+}
+
+@keyframes slidedown {
+	from { margin-top: -400px; }
+	to { margin-top: 120px; }
 }
 
 @media only screen and (max-width: 1100px) {

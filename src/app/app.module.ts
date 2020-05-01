@@ -10,6 +10,7 @@ import { WritingPageComponent } from './writing-page/writing-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageDescriptionComponent } from './home-page-description/home-page-description.component';
+import { DomSanitizerPipe } from './dom-sanitizer.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomePageDescriptionComponent } from './home-page-description/home-page-
     WritingPageComponent,
     ContactPageComponent,
     NavBarComponent,
-    HomePageDescriptionComponent
+    HomePageDescriptionComponent,
+    DomSanitizerPipe
   ],
   imports: [
     BrowserModule,
