@@ -1,0 +1,56 @@
+.home-page-container {
+	display: grid;
+	grid-template-columns: [text-content] 60% [portrait] 40%;
+}
+
+.home-page-description-container {
+	grid-column-start: text-content;
+	grid-column-end: portrait;
+}
+
+.mug-container {
+	grid-column-start: portrait;
+	display: flex;
+    justify-content: center;
+}
+
+.mug-container-smaller {
+	grid-column-start: text-content;
+	display: none;
+}
+
+.portrait-container {
+	display: flex;
+    justify-content: center;
+}
+
+.mug {
+	margin-top: 120px;
+	height: 18vw;
+	min-height: 260px;
+	border-radius: 300px;
+}
+
+@media only screen and (max-width: 1100px) {
+	.home-page-container {
+		display: grid;
+		grid-template-columns: [text-content] 80%;
+	}
+
+	.mug-container {
+		display: none;
+	}	
+
+	.mug-container-smaller {
+		display: flex;
+		justify-content: center;
+	}
+
+	.mug {
+		margin-top: 40px;
+	}
+
+	.home-page-description-container {
+		grid-column-end: unset;	
+	}
+}

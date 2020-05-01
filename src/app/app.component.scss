@@ -1,0 +1,24 @@
+.container {
+	display: grid;
+	grid-template-columns: [nav] 575px [app-content] auto;
+
+	width: 100vw;
+    height: 100vh;
+    margin: -8px;
+
+    background-image: url('../assets/icecream.jpg');
+    position: fixed;
+
+    @media only screen and (max-width: 1440px) {
+    	grid-template-columns: [nav] 300px [app-content] auto;	
+    }
+}
+
+.nav-bar-container {
+	grid-column-start: nav;
+	grid-column-end: app-content;
+}
+
+.content-container {
+	grid-column-start: app-content;
+}
